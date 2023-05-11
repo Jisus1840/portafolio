@@ -2,37 +2,116 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  font-family: 'Bruno Ace', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Pacifico', cursive;
+}
+
+/* body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} */
+
+.app {
+  display: grid;
+  grid-template-rows: auto 1fr;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: rgb(25, 0, 25);
+  /* background: linear-gradient(90deg, rgba(25, 0, 25, 1) 0%, rgba(43, 18, 76, 1) 100%); */
+  margin: auto;
+  /* font-family: -apple-system, BlinkMacSystemFont, sans-serif; */
+  overflow: auto;
+  background: linear-gradient(315deg, rgba(101, 0, 94, 1) 3%, rgba(60, 132, 206, 1) 38%, rgba(48, 238, 226, 1) 68%, rgba(255, 25, 25, 1) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
   color: white;
+
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app main {
+  padding: 10px;
+  height: 100%;
+  overflow: auto;
+}
+
+
+.imgPersonal {
+  width: 25vw;
+  height: 25vw;
+  /* background-repeat: no-repeat; */
+  background-position: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-size: 100% auto;
+}
+
+.imgProyecto {
+  width: 1000px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 5%;
+}
+
+.imgSocial {
+   width: 25vw;
+  /* height: 25vw;  */
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.texto {
+  text-align: center;
+  font-family: 'Bruno Ace', cursive;
+  font-family: 'EB Garamond', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Pacifico', cursive;
+}
+
+.nombre {
+  font-size: 100px;
+}
+
+p {
+  font-size: 25px;
+  font-family: 'Bruno Ace', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Pacifico', cursive;
+}
+
+.colorCard {
+  /* background-color: red; */
+  -webkit-box-shadow: -3px 4px 29px -3px rgba(0, 0, 0, 0.77);
+  -moz-box-shadow: -3px 4px 29px -3px rgba(0, 0, 0, 0.77);
+  box-shadow: -3px 4px 29px -3px rgba(0, 0, 0, 0.77);
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+.socialLink {
+  outline: none;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.socialLink:hover {
+  color: blueviolet;
 }

@@ -1,0 +1,25 @@
+.header {
+    display: grid;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    place-items: left;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+}
+
+.navbarLink {
+    color: white;
+    text-decoration: none;
+    margin-left: 5vh;
+}
+
+.logo {
+    width: 100px;
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
